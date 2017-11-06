@@ -1,0 +1,103 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>cFood Cookbook</title>
+    
+    <link href="StyleSheet.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 7px;
+        }
+        .auto-style2 {
+            width: 8px;
+        }
+        .auto-style3 {
+            width: 10px;
+        }
+        .auto-style4 {
+            width: 170px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+        <header>
+            <ul>
+                <li><a href="../Pages/Login.aspx">Login</a></li>
+                <li><a href="../Pages/Browse.aspx">Browse</a></li>
+                <li><a href="../Pages/Default.aspx">Home</a></li>
+                <!-- Revisit this when done with database, to upload the search bar -->
+                <li>
+                    <div class="form-group">
+                        <input class="form-control" id="search" placeholder="Searching..." type="text">
+                    </div>
+                </li>
+           </ul>
+         </header>
+
+        <div>
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div class="footer">
+            <table class="table-footer">
+                <tr>
+                    <td class="outempty-box">&nbsp;</td>
+                    <td class="title-box">CFOOD</td>
+                    <td class="empty-box">&nbsp;</td>
+                    <td class="title-box">ABOUT</td>
+                    <td class="empty-box">&nbsp;</td>
+                    <td class="title-box">SUPPORT</td>
+                    <td class="empty-box">&nbsp;</td>
+                    <td class="title-box">COMMUMITY</td>
+                    <td class="outempty-box">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="outempty-box">&nbsp;</td>
+                    <td class="inside-box">1000 3rd Street</td>
+                    <td class="empty-box">&nbsp;</td>
+                    <td class="inside-box"><a>Careers</a></td>
+                    <td class="empty-box">&nbsp;</td>
+                    <td class="inside-box"><a>Help Center</a></td>
+                    <td class="empty-box">&nbsp;</td>
+                    <td class="inside-box"><a>Facebook</a></td>
+                    <td class="outempty-box">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="outempty-box">&nbsp;</td>
+                    <td class="inside-box">Philadelphia, PA</td>
+                    <td class="empty-box">&nbsp;</td>
+                    <td class="inside-box"><a>Teams</a></td>
+                    <td class="empty-box">&nbsp;</td>
+                    <td class="inside-box"><a>Get Started</a></td>
+                    <td class="empty-box">&nbsp;</td>
+                    <td class="inside-box"><a>Twitter</a></td>
+                    <td class="outempty-box">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="outempty-box">&nbsp;</td>
+                    <td class="inside-box">(267) 111-2222</td>
+                    <td class="empty-box">&nbsp;</td>
+                    <td class="inside-box"><a>Blog</a></td>
+                    <td class="empty-box">&nbsp;</td>
+                    <td class="inside-box"><a>Contact Us</a></td>
+                    <td class="empty-box">&nbsp;</td>
+                    <td class="inside-box"><a>YouTube</a></td>
+                    <td class="outempty-box">&nbsp;</td>
+                </tr>
+            </table>
+
+        </div>
+
+    </form>
+</body>
+</html>

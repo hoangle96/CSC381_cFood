@@ -1,0 +1,164 @@
+html {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    background-image: url('Pictures/orange-gradient.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
+    width: 98%;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+/*Navgiation Bar*/
+header {
+    margin: 15px;
+    text-align: center;
+    color: #353535;
+    font-family: sans-serif;
+    font-size: 20px;
+    width: 98%;
+}
+
+ul {
+    text-align: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #fff;
+    color: #ff6a00;
+    font-weight: 500;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/*Footer*/
+.footer {
+    margin-top: 100px;
+    padding: 1rem;
+    background-color: #fff;
+    color: black;
+    height: 130px;
+    width: 100%;
+}
+
+.table-footer {
+    margin-top: 20px;
+    width: 100%;
+    text-align: left;
+}
+
+.inside-box a {
+    text-decoration: none;
+    width: 10%;
+    color: #ff8026;
+}
+
+.inside-box a:hover {
+    color: #ff0000;
+    cursor: pointer;
+}
+
+.inside-box {
+    color: black;
+    width: 10%;
+}
+
+.empty-box {
+    width: 3%;
+}
+
+.outempty-box {
+    width: 8%;
+}
+
+.title-box {
+    width: 10%;
+    font-weight: 700;
+}
+
+/* "Start Browsing" button */
+.btnBrowse {
+    border: thick solid white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 35px;
+    width: 200px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btnBrowse:hover {
+    background-color: white;
+    color: #ff6a00;
+    font-weight: 500;
+}
+
+/* Search form navigation */
+.form-inline .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+.form-group {
+    margin-top: 5px;
+}
+
+#search {
+    background: transparent;
+    border: 0px;
+    border-radius: 0;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    margin: 0 20px;
+    width: 250px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+
