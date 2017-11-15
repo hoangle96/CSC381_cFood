@@ -5,10 +5,10 @@
 <html>
 <head runat="server">
 	<title>cFood</title>
-	
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<link href="StyleSheet.css" rel="stylesheet" />
-	
+
 	<asp:ContentPlaceHolder ID="head" runat="server">
 </asp:ContentPlaceHolder>
 </head>
@@ -16,7 +16,7 @@
 	<header>
 		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
 			<a class="navbar-brand" href="#">
-				<img src="../Pictures/Logo/logo_color_inverted.png" height="30" />
+				<img src="../Pictures/Logo/logo_white.png" height="30" />
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -40,8 +40,8 @@
 			</div>
 		</nav>
 	</header>
-	
-	
+
+
 	<main role="main" class="container">
 		<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
 	</asp:ContentPlaceHolder>
@@ -50,60 +50,66 @@
 <footer class="footer">
 	<div class="container-fluid">
 		<div class="row">
+			<div class="col-1"></div>
 			<div class="col">
-				cFood
+				<div class="row">
+					<div class="col">
+						cFood
+					</div>
+					<div class="col">
+						About
+					</div>
+					<div class="col">
+						Support
+					</div>
+					<div class="col">
+						Community
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						1000 3rd Street
+					</div>
+					<div class="col">
+						Careers
+					</div>
+					<div class="col">
+						Help Center
+					</div>
+					<div class="col">
+						Facebook
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						Philadelphia, PA
+					</div>
+					<div class="col">
+						Teams
+					</div>
+					<div class="col">
+						Get Started
+					</div>
+					<div class="col">
+						Twitter
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						(267) 111-2222
+					</div>
+					<div class="col">
+						Blog
+					</div>
+					<div class="col">
+						Contact Us
+					</div>
+					<div class="col">
+						YouTube
+					</div>
+				</div>
 			</div>
-			<div class="col">
-				About
-			</div>
-			<div class="col">
-				Support
-			</div>
-			<div class="col">
-				Community
-			</div>
-		</div>
-		<div class="row">
-			<div class="col">
-				1000 3rd Street
-			</div>
-			<div class="col">
-				Careers
-			</div>
-			<div class="col">
-				Help Center
-			</div>
-			<div class="col">
-				Facebook
-			</div>
-		</div>
-		<div class="row">
-			<div class="col">
-				Philadelphia, PA
-			</div>
-			<div class="col">
-				Teams
-			</div>
-			<div class="col">
-				Get Started
-			</div>
-			<div class="col">
-				Twitter
-			</div>
-		</div>
-		<div class="row">
-			<div class="col">
-				(267) 111-2222
-			</div>
-			<div class="col">
-				Blog
-			</div>
-			<div class="col">
-				Contact Us
-			</div>
-			<div class="col">
-				YouTube
-			</div>
+			<div class="col-1"></div>
 		</div>
 	</div>
 </footer>
