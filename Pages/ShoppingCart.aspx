@@ -6,12 +6,14 @@
 <asp:Content ID="Content_Shopping" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div class="row">
         <div class="col-1">
-            <button type="button" class="btn btn-outline-secondary">Back</button>
+            <button type="button" class="btn btn-outline-secondary">
+                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </button>
         </div>
         <div class="col">
-        <div class="page-header">
-            <h1>Your Shopping Cart</h1>
-        </div>
+            <div class="page-header">
+                <h1>Your Shopping Cart</h1>
+            </div>
         </div>
     </div>
     <hr />
@@ -102,7 +104,7 @@
                 <span class="input-group-addon" id="basic-addon1">Coupon:</span>
                 <input type="text" class="form-control" aria-describedby="basic-addon1">
                 <span class="input-group-btn">
-                    <button class="btn btn-primary" type="button">Apply</button>
+                    <button class="btn btn-outline-primary" type="button">Apply</button>
                 </span>
             </div>
         </div>
@@ -115,7 +117,7 @@
                 <span class="input-group-addon" id="basic-addon2">Total Price:</span>
                 <input type="text" class="form-control" aria-describedby="basic-addon2" readonly="readonly" value="$45.00">
                 <span class="input-group-btn">
-                    <button class="btn btn-primary" type="button">Checkout</button>
+                    <button class="btn btn-primary btn-lg" type="button">Checkout</button>
                 </span>
             </div>
         </div>
