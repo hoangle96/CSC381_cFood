@@ -4,6 +4,7 @@
 </asp:Content>
 
 <asp:Content ID="Content_Shopping" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <div class="row" style="height: 100px;"></div>
     <div class="row">
         <div class="col-1">
             <button type="button" class="btn btn-outline-secondary">
@@ -122,4 +123,5 @@
             </div>
         </div>
     </div>
+    <div class="row" style="height: 100px;"></div>
 </asp:Content>
