@@ -51,68 +51,62 @@
 
     <hr />
     <footer class="footer">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
-                <div class="col-1"></div>
                 <div class="col">
-                    <div class="row">
-                        <div class="col">
-                            cFood
-                        </div>
-                        <div class="col">
-                            About
-                        </div>
-                        <div class="col">
-                            Support
-                        </div>
-                        <div class="col">
-                            Community
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            1000 3rd Street
-                        </div>
-                        <div class="col">
-                            Careers
-                        </div>
-                        <div class="col">
-                            Help Center
-                        </div>
-                        <div class="col">
-                            Facebook
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            Philadelphia, PA
-                        </div>
-                        <div class="col">
-                            Teams
-                        </div>
-                        <div class="col">
-                            Get Started
-                        </div>
-                        <div class="col">
-                            Twitter
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            (267) 111-2222
-                        </div>
-                        <div class="col">
-                            Blog
-                        </div>
-                        <div class="col">
-                            Contact Us
-                        </div>
-                        <div class="col">
-                            YouTube
-                        </div>
-                    </div>
+                    cFood
                 </div>
-                <div class="col-1"></div>
+                <div class="col">
+                    About
+                </div>
+                <div class="col">
+                    Support
+                </div>
+                <div class="col">
+                    Community
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    1000 3rd Street
+                </div>
+                <div class="col">
+                    Careers
+                </div>
+                <div class="col">
+                    Help Center
+                </div>
+                <div class="col">
+                    Facebook
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    Philadelphia, PA
+                </div>
+                <div class="col">
+                    Teams
+                </div>
+                <div class="col">
+                    Get Started
+                </div>
+                <div class="col">
+                    Twitter
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    (267) 111-2222
+                </div>
+                <div class="col">
+                    Blog
+                </div>
+                <div class="col">
+                    Contact Us
+                </div>
+                <div class="col">
+                    YouTube
+                </div>
             </div>
         </div>
     </footer>
