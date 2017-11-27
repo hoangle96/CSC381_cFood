@@ -25,7 +25,7 @@
             </div>
             <div class="row">
                 <p class="lead">
-                    <a href="#" class="btn btn-lg btn-primary">Start Browsing</a>
+                    <a href="#" class="btn btn-lg btn-outline-secondary">Start Browsing</a>
                 </p>
             </div>
         </div>
