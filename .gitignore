@@ -5,3 +5,4 @@ App_Data/Database.mdf
 *.ldf
 Pages/ShoppingCart.aspx
 App_Data/Database_log.ldf
+Pages/ShoppingCart.aspx
