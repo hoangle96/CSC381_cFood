@@ -1,2 +1,8 @@
 
 .vs/slnx.sqlite
+App_Data/Database.mdf
+*.mdf
+*.ldf
+Pages/ShoppingCart.aspx
+App_Data/Database_log.ldf
+Pages/ShoppingCart.aspx
