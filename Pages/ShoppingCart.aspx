@@ -3,7 +3,13 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
 
+
 <asp:Content ID="Content_Shopping" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+
+
+    <form id="form1" runat="server">
+
+
     <div class="row" style="height: 100px;"></div>
     <div class="row">
         <div class="col-1">
@@ -22,7 +28,9 @@
         <table class="table table-striped">
             <thead class="thead-light">
                 <tr>
-                    <th scope="col">Item</th>
+                    <th scope="col">Item
+                        
+                    </th>
                     <th scope="col">Details</th>
                     <th scope="col">Price</th>
                     <th scope="col">Action</th>
@@ -124,4 +132,20 @@
         </div>
     </div>
     <div class="row" style="height: 100px;"></div>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [CookBooks]"></asp:SqlDataSource>
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="bookid" DataSourceID="SqlDataSource1" EnableModelValidation="True">
+            <Columns>
+                <asp:BoundField DataField="bookid" HeaderText="bookid" ReadOnly="True" SortExpression="bookid" />
+                <asp:BoundField DataField="title" HeaderText="title" SortExpression="title" />
+                <asp:BoundField DataField="author" HeaderText="author" SortExpression="author" />
+                <asp:BoundField DataField="genre" HeaderText="genre" SortExpression="genre" />
+                <asp:BoundField DataField="price" HeaderText="price" SortExpression="price" />
+                <asp:BoundField DataField="ISBN" HeaderText="ISBN" SortExpression="ISBN" />
+                <asp:BoundField DataField="origin" HeaderText="origin" SortExpression="origin" />
+                <asp:BoundField DataField="calories" HeaderText="calories" SortExpression="calories" />
+                <asp:BoundField DataField="course" HeaderText="course" SortExpression="course" />
+                <asp:BoundField DataField="ingredient" HeaderText="ingredient" SortExpression="ingredient" />
+            </Columns>
+        </asp:GridView>
+    </form>
 </asp:Content>
