@@ -11,7 +11,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-<<<<<<< HEAD
+
     <form id="form1" runat="server">
         <br />
         <br />
@@ -38,9 +38,9 @@
         <table class="w-100">
             <tr>
                 <td>&nbsp;</td>
-                <td>ingredients:</td>
+                <td>Ingredients:</td>
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td>Country of Origin</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
@@ -51,7 +51,11 @@
                     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT DISTINCT [ingredient] FROM [CookBooks]"></asp:SqlDataSource>
                 </td>
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT DISTINCT [origin] FROM [CookBooks]"></asp:SqlDataSource>
+                    <asp:DropDownList ID="DropDownList2" runat="server" DataSourceID="SqlDataSource3" DataTextField="origin" DataValueField="origin" AutoPostBack="True">
+                    </asp:DropDownList>
+                </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
@@ -125,9 +129,30 @@
         </asp:SqlDataSource>
 
     
+        <br />
+        <asp:SqlDataSource ID="SqlDataSource4" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [CookBooks] WHERE ([origin] = @origin)">
+            <SelectParameters>
+                <asp:ControlParameter ControlID="DropDownList2" Name="origin" PropertyName="SelectedValue" Type="String" />
+            </SelectParameters>
+        </asp:SqlDataSource>
+        <asp:GridView ID="GridView2" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="bookid" DataSourceID="SqlDataSource4" EnableModelValidation="True">
+            <Columns>
+                <asp:BoundField DataField="bookid" HeaderText="bookid" ReadOnly="True" SortExpression="bookid" />
+                <asp:BoundField DataField="title" HeaderText="title" SortExpression="title" />
+                <asp:BoundField DataField="author" HeaderText="author" SortExpression="author" />
+                <asp:BoundField DataField="genre" HeaderText="genre" SortExpression="genre" />
+                <asp:BoundField DataField="price" HeaderText="price" SortExpression="price" />
+                <asp:BoundField DataField="ISBN" HeaderText="ISBN" SortExpression="ISBN" />
+                <asp:BoundField DataField="origin" HeaderText="origin" SortExpression="origin" />
+                <asp:BoundField DataField="calories" HeaderText="calories" SortExpression="calories" />
+                <asp:BoundField DataField="course" HeaderText="course" SortExpression="course" />
+                <asp:BoundField DataField="ingredient" HeaderText="ingredient" SortExpression="ingredient" />
+            </Columns>
+        </asp:GridView>
+        <br />
+
+    
     </form>
     
-=======
->>>>>>> 78311d5c923b3190d29e47207fdb077abd548477
 </asp:Content>
 
