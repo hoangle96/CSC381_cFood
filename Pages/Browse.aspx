@@ -15,25 +15,12 @@
     <form id="form1" runat="server">
         <br />
         <br />
-        <h3>Looking for specific cookbooks?</h3>
-
-        <table class="w-100">
-            <tr>
-                <td class="auto-style2">&nbsp;</td>
-                <td class="auto-style1">
-                    <asp:TextBox ID="TextBox1" runat="server" Width="357px"></asp:TextBox>
-                </td>
-                <td>
-                    <asp:Button ID="Button1" runat="server" Text="Button" />
-                </td>
-                <td>&nbsp;</td>
-            </tr>
-        </table>
-        <h2>- or -</h2>
-        <h3>Search by criteria:</h3>
-
+        <br />
+        <br />
+        <br />
+        <h2>Looking for specific cookbooks?</h2>
         
-
+        <h4>Search by criteria:</h4>
     
         <table class="w-100">
             <tr>
@@ -65,23 +52,9 @@
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
         </table>
 
-        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="bookid" DataSourceID="SqlDataSource2" EnableModelValidation="True">
+        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="bookid" DataSourceID="SqlDataSource2" EnableModelValidation="True" OnRowCommand="GridView1_RowCommand">
             <Columns>
                 <asp:BoundField DataField="bookid" HeaderText="bookid" ReadOnly="True" SortExpression="bookid" />
                 <asp:BoundField DataField="title" HeaderText="title" SortExpression="title" />
@@ -93,6 +66,7 @@
                 <asp:BoundField DataField="calories" HeaderText="calories" SortExpression="calories" />
                 <asp:BoundField DataField="course" HeaderText="course" SortExpression="course" />
                 <asp:BoundField DataField="ingredient" HeaderText="ingredient" SortExpression="ingredient" />
+                <asp:CommandField SelectText="Add to Cart" ShowSelectButton="True" ButtonType="Button" />
             </Columns>
         </asp:GridView>
         <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [CookBooks] WHERE ([ingredient] = @ingredient)" DeleteCommand="DELETE FROM [CookBooks] WHERE [bookid] = @bookid" InsertCommand="INSERT INTO [CookBooks] ([bookid], [title], [author], [genre], [price], [ISBN], [origin], [calories], [course], [ingredient]) VALUES (@bookid, @title, @author, @genre, @price, @ISBN, @origin, @calories, @course, @ingredient)" UpdateCommand="UPDATE [CookBooks] SET [title] = @title, [author] = @author, [genre] = @genre, [price] = @price, [ISBN] = @ISBN, [origin] = @origin, [calories] = @calories, [course] = @course, [ingredient] = @ingredient WHERE [bookid] = @bookid">
@@ -135,7 +109,7 @@
                 <asp:ControlParameter ControlID="DropDownList2" Name="origin" PropertyName="SelectedValue" Type="String" />
             </SelectParameters>
         </asp:SqlDataSource>
-        <asp:GridView ID="GridView2" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="bookid" DataSourceID="SqlDataSource4" EnableModelValidation="True">
+        <asp:GridView ID="GridView2" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="bookid" DataSourceID="SqlDataSource4" EnableModelValidation="True" OnRowCommand="GridView1_RowCommand">
             <Columns>
                 <asp:BoundField DataField="bookid" HeaderText="bookid" ReadOnly="True" SortExpression="bookid" />
                 <asp:BoundField DataField="title" HeaderText="title" SortExpression="title" />
@@ -147,6 +121,7 @@
                 <asp:BoundField DataField="calories" HeaderText="calories" SortExpression="calories" />
                 <asp:BoundField DataField="course" HeaderText="course" SortExpression="course" />
                 <asp:BoundField DataField="ingredient" HeaderText="ingredient" SortExpression="ingredient" />
+                <asp:CommandField ButtonType="Button" SelectText="Add to Cart" ShowSelectButton="True" />
             </Columns>
         </asp:GridView>
         <br />
